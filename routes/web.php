@@ -87,4 +87,7 @@ Route::get('/register', function () {
 Route::get('/forgot-password', function () {
     return view('forgot-password');
 });
-
+// Orther
+Route::get('/commingsoon', function () {
+    return view('commingsoon');
+});
