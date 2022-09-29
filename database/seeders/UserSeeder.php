@@ -30,7 +30,7 @@ class UserSeeder extends Seeder
                         'username' => $member . '.' . strtolower($role->name),
                         'first_name' => ucfirst($member),
                         'last_name' => $role->name,
-                        'email' => 'fpt.eprojectz+' . $member . strtolower($role->name) . '@gmail.com',
+                        'email' => 'cd9t.estudiez+' . $member . strtolower($role->name) . '@gmail.com',
                     ]);
             }
             $teacher = User::where('username', $member . '.teacher')->first();
