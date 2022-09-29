@@ -51,7 +51,7 @@
 							<h1 class="text-white">
 								Gallery
 							</h1>
-							<p class="text-white link-nav"><a href="/index">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="/gallery"> Gallery</a></p>
+							<p class="text-white link-nav"><a href="/">Home </a>  <span class="lnr lnr-arrow-right"></span> <a href="/gallery"> Gallery</a></p>
 						</div>
 					</div>
 				</div>
@@ -146,7 +146,7 @@
 							<h1>Not Yet Satisfied with our Trend?</h1>
 						</div>
 						<div class="col-lg-4 cta-right">
-							<a class="primary-btn wh" href="#">view our blog</a>
+							<a class="primary-btn wh" href="/blog-home">view our blog</a>
 						</div>
 					</div>
 				</div>
