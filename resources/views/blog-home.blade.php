@@ -144,11 +144,11 @@
 									<div class="feature-img">
 										<img class="img-fluid" src="img/blog/feature-img1.jpg" alt="">
 									</div>
-									<a class="posts-title" href="blog-single1.blade.php"><h3>The School of Advancement and Technology</h3></a>
+									<a class="posts-title" href="/blog-single1"><h3>The School of Advancement and Technology</h3></a>
 									<p class="excert">
 										Our school always brings the latest innovations of the times, bringing cutting-edge science and technology to our curricula.
 									</p>
-									<a href="blog-single1.blade.php" class="primary-btn">View More</a>
+									<a href="/blog-single1" class="primary-btn">View More</a>
 								</div>
 							</div>
 							<div class="single-post row">
@@ -170,11 +170,11 @@
 									<div class="feature-img">
 										<img class="img-fluid" src="img/blog/feature-img2.jpg" alt="">
 									</div>
-									<a class="posts-title" href="blog-single2.blade.php"><h3>Great experience while studying at school</h3></a>
+									<a class="posts-title" href="/blog-single2"><h3>Great experience while studying at school</h3></a>
 									<p class="excert">
 										We bring great experiences when studying at a leading international school, bringing the young generation of students to the world, bringing the core values of learning.
 									</p>
-									<a href="blog-single2.blade.php" class="primary-btn">View More</a>
+									<a href="/blog-single2" class="primary-btn">View More</a>
 								</div>
 							</div>
 							<div class="single-post row">
@@ -196,11 +196,11 @@
 									<div class="feature-img">
 										<img class="img-fluid" src="img/blog/feature-img3.jpg" alt="">
 									</div>
-									<a class="posts-title" href="blog-single3.blade.php"><h3>Qualified and reputable teachers</h3></a>
+									<a class="posts-title" href="/blog-single3"><h3>Qualified and reputable teachers</h3></a>
 									<p class="excert">
 										A team of qualified lecturers, experienced in teaching and training the best students in the industry, ensures you a solid and sure source of knowledge.
 									</p>
-									<a href="blog-single3.blade.php" class="primary-btn">View More</a>
+									<a href="/blog-single3" class="primary-btn">View More</a>
 								</div>
 							</div>
 							<div class="single-post row">
