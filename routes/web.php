@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -78,16 +79,28 @@ Route::get('/about', function () {
     return view('about');
 });
 // Auth
-Route::get('/login', function () {
-    return view('login');
-});
-Route::get('/register', function () {
-    return view('register');
-});
-Route::get('/forgot-password', function () {
-    return view('forgot-password');
-});
+//Route::get('/login', function () {
+//    return view('login');
+//});
+//Route::get('/register', function () {
+//    return view('register');
+//});
+//Route::get('/forgot-password', function () {
+//    return view('forgot-password');
+//});
 // Orther
 Route::get('/commingsoon', function () {
     return view('commingsoon');
+});
+Route::get('/mail', function () {
+    return view('mail');
+});
+//
+Route::name('auth.')->withoutMiddleware('auth')->group(function () {
+    Route::get('login', [AuthController::class, 'login'])->name('login');
+    Route::post('login', [AuthController::class, 'authenticate'])->name('authenticate');
+    Route::get('logout', [AuthController::class, 'logout'])->name('logout');
+    Route::get('register', [AuthController::class, 'register'])->name('register');
+    Route::post('register', [AuthController::class, 'handleRegister'])->name('handle-register');
+    Route::get('forgot-password', [AuthController::class, 'forgotpassword'])->name('forgot-password');
 });

@@ -27,16 +27,24 @@ sizes="700x700"
 	<link rel="stylesheet" type="text/css" href="/css/bass.css">
 <!--===============================================================================================-->
 </head>
+
 <body>
 
-	<div class="limiter">
+	<div class="limiter" id="auth">
 		<div class="container-login100">
 			<div class="wrap-login100">
 				<div class="login100-pic js-tilt" data-tilt>
 					<a href="/"><img class="image-logo" src="/img/image/logosem2.png" alt="IMG"></a>
 				</div>
 
-				<form class="login100-form validate-form">
+                @if (session()->has('error'))
+                    <div class="alert alert-danger alert-dismissible show fade">
+                        {{ session()->get('error') }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                @endif
+				<form class="login100-form validate-form" action="{{route('auth.login')}}" method="post">
+                    @csrf
 					<span class="login100-form-title">
 						Login
 					</span>
@@ -64,14 +72,14 @@ sizes="700x700"
 					</div>
 
 					<div class="text-center p-t-12 text-support">
-						<a class="txt2 text-controller text-danger" href="/forgot-password">
+						<a class="txt2 text-controller text-danger" href="{{route('auth.forgot-password')}}">
 							Forgot Password?
 						</a>
 					</div>
 
 					<div class="text-center p-t-136">
 						Don't have an account?
-						<a class="txt2 text-controller text-danger" href="/register">
+						<a class="txt2 text-controller text-danger" href="{{route('auth.register')}}">
 							click here to register
 							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
 						</a>

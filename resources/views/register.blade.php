@@ -29,14 +29,15 @@ sizes="700x700"
 </head>
 <body>
 
-	<div class="limiter">
+	<div class="limiter" id="app">
 		<div class="container-login100">
 			<div class="wrap-login100">
 				<div class="login100-pic js-tilt" data-tilt>
 					<a href="/"><img class="image-logo" src="/img/image/logosem2.png" alt="IMG"></a>
 				</div>
 
-				<form class="login100-form validate-form">
+				<form class="login100-form validate-form" method="post">
+                    @csrf
 					<span class="login100-form-title">
 						Register
 					</span>

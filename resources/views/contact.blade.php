@@ -92,7 +92,7 @@
 									<span class="lnr lnr-envelope"></span>
 								</div>
 								<div class="contact-details">
-									<h5>support@5superhero.edu.vn</h5>
+									<h5>support@fivesuperhero.edu.vn</h5>
 									<p>Send us your query anytime!</p>
 								</div>
 							</div>
@@ -100,7 +100,7 @@
 						<div class="col-lg-8">
 								<h5 class="feedback-contact">Feedback to us</h5>
 							<div>
-								<form class="form-area contact-form text-right" id="myForm" action="mail.php" method="post">
+								<form class="form-area contact-form text-right" id="myForm" action="/mail" method="post">
 									<div class="row">
 										<div class="col-lg-6 form-group">
 											<input name="name" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="common-input mb-20 form-control" required="" type="text">

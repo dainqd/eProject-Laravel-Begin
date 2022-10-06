@@ -25,15 +25,15 @@ class AuthController extends Controller
 
     public function login()
     {
-        return view('pages.auth.login');
+        return view('/login');
     }
 
     public function authenticate(LoginRequest $request): RedirectResponse
     {
-        $credentials = $request->only(['username', 'password']);
+        $credentials = $request->only(['email', 'password']);
         $remember = !!$request->input('remember', false);
         if (Auth::attempt($credentials, $remember)) {
-            return redirect()->route('dashboard');
+            return redirect()->route('/dashboard');
         } else {
             return redirect()->back()->with('error', 'Invalid credentials');
         }
@@ -47,12 +47,17 @@ class AuthController extends Controller
 
     public function register()
     {
-        return view('pages.auth.register');
+        return view('/register');
     }
 
     public function handleRegister(UserRequest $userRequest)
     {
         $this->userService->store($userRequest->validated());
         return redirect()->route('auth.login');
+    }
+
+    public function forgotpassword()
+    {
+        return view('/forgot-password');
     }
 }
